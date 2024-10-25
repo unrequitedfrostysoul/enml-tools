@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="document-wrapper">
+            <div id="templates">
+                <template data-key="menu">
+                        <menu>
+                            <li><button data-key="export" type="button">Exportar todos os nomes para arquivo LIST</button></li>
+                        </menu>
+                </template>
+                <template data-key="container">
+                    <div class="container">
+                        <header>
+                            <h3 class="heading" data-key="h3">Arquivo </h3>
+                            <p>Itens presentes:</p>
+                        </header>
+                    </div>
+                </template>
+                <template data-key="div-items">
+                    <div class="div-items"></div>
+                </template>
+                <template data-key="viewer-table">
+                    <table class="viewer-table" data-key="table">
+                        <thead>
+                            <tr>
+                                <th>Propriedade</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </template>
+                <template data-key="row">
+                    <tr>
+                        <th data-key="th"></th>
+                        <td data-key="td"></td>
+                    </tr>
+                </template>
+            </div>
+            <header>
+                <h1 class="main-heading">ENML tools</h1>
+                <p>Conjunto de ferramentas simples para o gerenciamento de arquivos ENML.</p>
+            </header>
+            <main>
+                <form id="enml-files">
+                    <label>Arquivo(s) ENML para leitura: <input data-key="files" multiple type="file"></label>
+                </form>
+                <div id="menu">
+                    <menu>
+                        <li><button disabled type="button">Exportar todos os nomes para arquivo LIST</button></li>
+                    </menu>
+                </div>
+                <section>
+                    <header>
+                        <h2 class="heading">Visualização</h2>
+                        <p>Visualize os itens contidos no arquivos, em formato de tabelas.</p>
+                    </header>
+                    <div id="viewer"></div>
+                </section>
+            </main>
+            <footer>
+                <address>
+                    <p>Criado por unrequitedfrostysoul (Unrequited Ryan): <a href="mailto:unrequitedfrostysoul@gmail.com">enviar um e-mail</a>.</p>
+                </address>
+            </footer>
+        </div>
+    </body>
+</html>
